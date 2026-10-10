@@ -27,7 +27,7 @@ MAX_RESPONSE_BYTES = 1024 * 1024
 class ScanRequest(BaseModel):
     url: str = Field(..., description="HTTP or HTTPS URL to assess")
     authorized: bool = Field(
-        ..., description="Confirm that you are authorized to assess this service")
+        ..., description="Confirm that you are authorized to assess this service"
     )
 
     @field_validator("url")
